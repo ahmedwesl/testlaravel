@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class CartController extends Controller
 {
     function monpannier () {
-        return 'Panier';
+        return view('cart');
 
     }
 
