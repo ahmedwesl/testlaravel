@@ -108,6 +108,8 @@
       <path value="$PROJECT_DIR$/laravel/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/laravel/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/laravel/vendor/maximebf/debugbar" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

@@ -1,13 +1,19 @@
 @extends('layouts.test')
 @section('ecommerce')
-   Liste de produit
+    Liste de produit
 @endsection
 @section('content')
 
-    <div   class="container">
-        <div class="row">
-            <div class ="col-md-12"
-            <h1> Liste des produits </h1>
+    <h1> Liste des produits </h1>
+    @foreach($produits as $produits)
+
+        <img src="{{$produits->image}}" alt="">
+        <h1> Nom du produit {{$produits->name}}</h1>
+        <h1> Prix {{$produits->price}} € </h1>
+        <h1> Quantité {{$produits->quantity}}  </h1>
         </div>
-    </div>
+        </div>
+    @endforeach
+
 @endsection
+
