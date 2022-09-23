@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Backoffice\BackOfficeController;
+use App\Http\Controllers\Backoffice\CreateOffice;
 use App\Http\Controllers\BynameController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
@@ -30,14 +32,9 @@ use App\Http\Controllers\ByPriceController;
 
 Route::get('/', [HomeController::class, 'homepage']);
 
+Route::get('/products', [ProductController::class, 'listeproduits']);
 
-Route::get('/product', [ProductController::class, 'listeproduits']);
-
-
-Route::get('/product/{id}', [ProductController::class, 'ficheproduit']);
-
-
-Route::get('/cart', [CartController::class, 'monpannier']);
+Route::get('/products/{id}', [ProductController::class, 'ficheproduit']);
 
 Route::get('/cart', [CartController::class, 'monpannier']);
 
@@ -46,3 +43,15 @@ Route::get('/byname',[BynameController::class,'byname']);
 Route::get('/price',[ByPriceController::class,'byprice']);
 
 Route::get('/nameprice/{id}',[NamePriceController::class,'bynameprice']);
+
+Route::get('/backoffice',[BackOfficeController::class,'index']);
+
+Route::get('/backoffice/create',[BackOfficeController::class,'create']);
+
+Route::post('/backoffice',[BackOfficeController::class,'store']);
+
+Route::delete('/backoffice/{id}',[BackOfficeController::class,'destroy']);
+
+Route::post('/backoffice/edit',[BackOfficeController::class,'edit']);
+
+

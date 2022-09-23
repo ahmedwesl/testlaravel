@@ -10,7 +10,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Acceuil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/product">Liste de produit</a>
+                    <a class="nav-link" href="/products">Liste de produit</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/cart">Mon panier</a>
