@@ -11,7 +11,8 @@ class ProductController extends Controller
 {
     function listeproduits()
     {
-        $produits = Products::All();
+//        $produits = DB::select('SELECT * FROM products');
+        $produits= Products::All();
         return view("product-list", compact('produits'));
 
     }
@@ -29,3 +30,4 @@ class ProductController extends Controller
 
 }
 
+//$produits = Products::All();

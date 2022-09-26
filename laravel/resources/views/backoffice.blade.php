@@ -17,7 +17,7 @@
                 <h3> Nom du produit : {{$produits->name}}</h3>
                 <h3> Prix {{$produits->price}} € </h3>
                 <h3> Quantité : {{$produits->quantity}}  </h3>
-                <a class="btn btn-primary" href="/backoffice/edit{product->id}=" role="button">Edit</a>
+                <a class="btn btn-primary" href="/backoffice/edit{{$produits->id}}" role="button">Edit</a>
                 <form action="backoffice/{{ $produits->id }}" method="post">
                     @csrf
                     @method('DELETE')

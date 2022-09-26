@@ -52,6 +52,8 @@ Route::post('/backoffice',[BackOfficeController::class,'store']);
 
 Route::delete('/backoffice/{id}',[BackOfficeController::class,'destroy']);
 
-Route::post('/backoffice/edit',[BackOfficeController::class,'edit']);
+Route::get('/backoffice/edit{id}',[BackOfficeController::class,'edit'])->name('backoffice.update');
+
+Route::put('/backoffice/update{id}',[BackOfficeController::class,'update']);
 
 
